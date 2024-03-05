@@ -8,4 +8,16 @@ console.log(text + " = " + typeof(text));
 console.log(number + " = " + typeof(number));
 console.log(boolean + " = " + typeof(boolean));
 
-/* */
+console.log('----------------------------------------');
+
+/*Crie duas variáveis, uma contendo seu primeiro nome e outra contendo seu último nome. Em seguida, combine-as em 
+uma terceira variável usando o operador + e em uma quarta variável usando template strings. Por fim, imprima os resultados 
+obtidos no console.*/
+const firstName = 'Maria Eduarda';
+const lastName = 'de Faria';
+
+const fullName = firstName + ' ' + lastName;
+const fullNameWithStrings = `${firstName} ${lastName}`;
+
+console.log(fullName);
+console.log(fullNameWithStrings);
