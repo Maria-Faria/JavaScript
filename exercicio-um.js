@@ -59,3 +59,16 @@ if(true) {
 
 console.log('Fora do bloco: ' + test);
 console.log('Fora do bloco: ' + test2);
+
+console.log('----------------------------------------');
+
+/*Declare uma variável booleana que informa se está chovendo e utilize-a em uma estrutura condicional (if) para exibir uma 
+mensagem informando se é preciso levar um guarda-chuva ou não dependendo do valor da variável.*/
+const umbrella = false;
+
+if(umbrella) {
+    console.log('Levar o guarda-chuva');
+
+}else {
+    console.log('Não levar o guarda-chuva');
+}
