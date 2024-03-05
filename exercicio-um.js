@@ -42,3 +42,20 @@ console.log(value);
 
 value = 90;
 console.log(value);
+
+console.log('----------------------------------------');
+
+/*Declare uma variável usando var fora de um bloco de código (por exemplo, if) e outra dentro desse bloco. 
+Tente acessar essas variáveis dentro do bloc e fora dele utilizando console.log e analise os resultados. 
+Faça o mesmo processo utilizando let e compare com os resultados anteriores.*/
+var test = 'teste';
+console.log('Fora do bloco: ' + test);
+
+if(true) {
+    var test2 = 'teste 2';
+    console.log('Dentro do bloco: ' + test);
+    console.log('Dentro do bloco: ' + test2);
+}
+
+console.log('Fora do bloco: ' + test);
+console.log('Fora do bloco: ' + test2);
