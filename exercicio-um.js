@@ -32,3 +32,13 @@ const string = 'texto';
 const phrase = `A palavra ${string} tem ${num} letras`;
 
 console.log(phrase);
+
+console.log('----------------------------------------');
+
+/*Crie uma variável inicializada com um valor de qualquer tipo e, em seguida, reatribua um novo valor a essa variável. 
+Imprima ambos os valores no console após atribuí-los.*/
+let value = 'palavra';
+console.log(value);
+
+value = 90;
+console.log(value);
