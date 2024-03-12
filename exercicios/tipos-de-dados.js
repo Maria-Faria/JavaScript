@@ -31,3 +31,14 @@ const var3 = true;
 const result = `${var1} é um número, '${var2}' é uma string e ${var3} é um boolean`;
 
 console.log(result);
+console.log("-----------------------------------");
+
+/*Crie uma variável numérica e uma string. Faça a conversão da variável numérica para string e da string para número. 
+Exiba os tipos de dados resultantes no console.*/
+const num = 6;
+const numString = '5';
+
+console.log(String(num));
+console.log(Number(numString));
+console.log("-----------------------------------");
+/* */
