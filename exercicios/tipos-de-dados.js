@@ -41,4 +41,12 @@ const numString = '5';
 console.log(String(num));
 console.log(Number(numString));
 console.log("-----------------------------------");
-/* */
+
+/*Crie uma variável com uma string e utilize métodos de manipulação de strings, como toUpperCase, toLowerCase, slice ou outros, 
+para modificar a string original. Exiba os resultados finais no console.*/
+const text = 'I am Still Remembering';
+
+console.log(`Texto original: ${text}`);
+console.log(`Em capslock: ${text.toUpperCase()}`);
+console.log(`Em minúsculas: ${text.toLowerCase()}`);
+console.log(`Apenas uma parte: ${text.slice(0, 4)}`);
