@@ -8,3 +8,16 @@ console.log('Comprimento da frase (com espaços): ' + phrase.length);
 
 //frase em capslock
 console.log(phrase.toUpperCase());
+console.log("-----------------------------------");
+
+/*Declare duas variáveis, uma inicializada com valor null e outra que não recebe atribuição (resultando em undefined). 
+Exiba os valores no console.*/
+
+//variável null
+let nullVar = null;
+let undefinedVar;
+
+//exibindo no console
+console.log(nullVar);
+console.log(undefinedVar);
+console.log("-----------------------------------");
