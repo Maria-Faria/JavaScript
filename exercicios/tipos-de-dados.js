@@ -21,3 +21,13 @@ let undefinedVar;
 console.log(nullVar);
 console.log(undefinedVar);
 console.log("-----------------------------------");
+
+/*Crie 3 variáveis de tipos diferentes, utilize template strings para combinar os diferentes tipos de dados (number, string, boolean)
+em uma única string e exiba o resultado no console.*/
+const var1 = 15;
+const var2 = 'Variável string';
+const var3 = true;
+
+const result = `${var1} é um número, '${var2}' é uma string e ${var3} é um boolean`;
+
+console.log(result);
