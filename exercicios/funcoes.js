@@ -44,3 +44,31 @@ function isPalindromo(word) {
 }
 
 console.log(isPalindromo('arara'));
+line();
+
+/*Crie uma função que receba três números como parâmetros e determine qual é o maior entre eles. 
+Utilize estruturas condicionais (if, else) para comparar os valores e determinar o maior. 
+Imprima o maior valor no console. */
+
+const biggestNumber = (num1, num2, num3) => {
+    let biggest = num1;
+
+    if(num2 > num1 && num2 > num3) {
+        biggest = num2;
+    
+    }else if(num3 > num1 && num3 > num2) {
+        biggest = num3;
+    }
+
+    return biggest;
+}
+
+console.log(`O maior número é ${biggestNumber(25, 6, 8)}`);
+line();
+
+/*Crie uma arrow function chamada calculaPotencia que receba dois parâmetros: a base e o expoente. 
+A função deve calcular a potência da base elevada ao expoente e retornar o resultado.*/
+
+const calculaPotencia = (base, expoente) => Math.pow(base, expoente);
+
+console.log(calculaPotencia(2, 3));
