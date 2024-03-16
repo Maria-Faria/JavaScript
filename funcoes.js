@@ -7,3 +7,5 @@ function showStudentName(name, grade) {
 
 console.log(showStudentName('Caroline', 10));
 console.log(showStudentName('Júlio', 5));
+
+//hoisting
