@@ -14,3 +14,15 @@ console.log(`Saldo após depósito: ${saldo}`);
 operacao = saldo - saque;
 saldo = operacao;
 console.log(`Saldo após saque: R$${saldo.toFixed(2)}`);
+
+console.log('-----------------------------------------');
+
+/*Crie uma variável numérica com um valor. Utilize um operador ternário para verificar se esse valor é par ou ímpar. 
+Exiba o resultado no console.*/
+
+const num = 7;
+const parImpar = num % 2 === 0 ? 'Par' : 'Ímpar';
+
+console.log(`${num} é ${parImpar}`);
+
+console.log('-----------------------------------------');
