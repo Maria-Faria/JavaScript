@@ -41,4 +41,17 @@ if(logado && isAdmin) {
     console.log('Acesso negado');
 }
 
-('-----------------------------------------');
+console.log('-----------------------------------------');
+
+/*Declare duas variáveis booleanas e use o operador OR para verificar se pelo menos uma delas é verdadeira. 
+Exiba o resultado no console.*/
+
+const var1 = false;
+const var2 = true;
+
+if(var1 || var2) {
+    console.log('Pelo menos uma das variáveis é verdadeira');
+
+}else {
+    console.log('Nenhuma das variáveis é verdadeira');
+}
