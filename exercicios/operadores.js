@@ -26,3 +26,19 @@ const parImpar = num % 2 === 0 ? 'Par' : 'Ímpar';
 console.log(`${num} é ${parImpar}`);
 
 console.log('-----------------------------------------');
+
+/*Considere uma situação em que você está verificando se um usuário está logado e tem permissão de administrador para 
+acessar determinada funcionalidade. Utilize variáveis booleanas para simular essas condições e use o operador AND para 
+verificar se ambas são verdadeiras.*/
+
+let logado = false;
+const isAdmin = true;
+
+if(logado && isAdmin) {
+    console.log('Acesso liberado');
+
+}else {
+    console.log('Acesso negado');
+}
+
+('-----------------------------------------');
