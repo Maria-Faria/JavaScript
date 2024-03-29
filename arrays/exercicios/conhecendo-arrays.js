@@ -35,3 +35,18 @@ const frutas = ['Maçã', 'Banana', 'Laranja', 'Limão', 'Abacaxi']
 Utilize o método splice para remover as frutas no índice 2 e 3 e, em seguida, adicione as frutas 'Kiwi' e 'Pêssego' 
 nesses mesmos índices. */
 const frutas = ['Maçã', 'Banana', 'Laranja', 'Limão', 'Abacaxi'];
+
+console.log(question + '.');
+console.log(`Lista de compras inicial: ${frutas}`);
+
+frutas.splice(2, 2, 'Kiwi', 'Pêssego');
+
+console.log(`Nova lista de compras: ${frutas}`);
+line();
+question++;
+
+/*4 - Crie dois arrays chamados menuPrincipal e menuDeSobremesas contendo opções do cardápio de um restaurante. 
+Utilize o método concat para criar um novo array menuCompleto contendo todos os elementos de menuPrincipal seguidos 
+pelos elementos de menuDeSobremesas.*/
+const menuPrincipal = [];
+const menuDeSobremesas = [];
