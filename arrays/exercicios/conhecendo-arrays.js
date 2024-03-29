@@ -70,6 +70,7 @@ let value = 1;
 
 for(let i = 0; i < 3; i++) {
     const row = [];
+
     for(let j = 0; j < 3; j++) {
         row.push(value);
         value++;   
@@ -80,5 +81,12 @@ for(let i = 0; i < 3; i++) {
 
 console.log(question + '.');
 console.log(matriz);
+line();
+question++;
+
+/*6 - Acesse e imprima o elemento na segunda linha e terceira coluna da lista bidimensional matriz 
+criada no exercício anterior. */
+console.log(question + '.');
+console.log(matriz[1][2]);
 line();
 question++;
