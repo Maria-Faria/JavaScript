@@ -57,3 +57,28 @@ console.log(question + '.');
 console.log(menuCompleto);
 line();
 question++;
+
+/*5 - Crie uma lista bidimensional com 3 linhas e 3 colunas, onde cada elemento seja uma matriz 3x3 com valores 
+iniciando em 1 e aumentando em 1 a cada elemento.
+
+Dicas:
+
+comece com um array vazio, por exemplo const matriz = [] e adicione valores nele com push;
+você pode resolver usando um for dentro de outro for. */
+const matriz = [];
+let value = 1;
+
+for(let i = 0; i < 3; i++) {
+    const row = [];
+    for(let j = 0; j < 3; j++) {
+        row.push(value);
+        value++;   
+    }
+
+    matriz.push(row);
+}
+
+console.log(question + '.');
+console.log(matriz);
+line();
+question++;
