@@ -85,8 +85,14 @@ line();
 question++;
 
 /*6 - Acesse e imprima o elemento na segunda linha e terceira coluna da lista bidimensional matriz 
-criada no exercício anterior. */
+criada no exercício anterior.*/
 console.log(question + '.');
 console.log(matriz[1][2]);
 line();
 question++;
+
+/*7 - Adicione um novo elemento (por exemplo,15) na terceira linha e segunda coluna da lista 
+bidimensional matriz criada anteriormente.*/
+console.log(question + '.');
+matriz[2][1] = 15; //troca os elementos
+console.log(matriz);
