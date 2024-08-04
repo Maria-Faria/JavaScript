@@ -5,3 +5,5 @@ O objetivo desse repositório é armazenar códigos realizados durante aulas do 
 
 ## ✏️ Anotações
 `unshift`: método para adicionar elementos no início de um array
+
+`arrow function`: não lida bem com contexto (ex.: this)
