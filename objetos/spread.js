@@ -9,7 +9,7 @@ const student = {
         street: 'Joaquim Antonio da Rocha',
         number: '222',
         complement: 'Logo ali'
-    }, 
+    },
     {
         street: 'Rua Dona Clotilde',
         number: '71',
@@ -17,11 +17,17 @@ const student = {
     }]
 };
 
-for (let key in student) {
-    const type = typeof student[key];
-    
-    if(type !== 'object' && type !== 'function') {
-        const text = `A chave ${key} tem o valor ${student[key]}`;
-        console.log(text);
-    }
+function showPhones(phone1, phone2) {
+    console.log(`Ligar para ${phone1}`);
+    console.log(`Ligar para ${phone2}`);
 }
+
+showPhones(student.phones[0], student.phones[1]);
+showPhones(...student.phones);
+
+const sendDatas =  {
+    receiver: student.name,
+    ...student.address[0]
+};
+
+console.log(sendDatas);
