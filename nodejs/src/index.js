@@ -5,20 +5,24 @@ const filePath = process.argv;
 const link = filePath[2];
 
 fs.readFile(link, 'utf-8', (error, text) => {
-    crashInParagraph(text);
-    //checkDuplicatedWords(text);
+    console.log('Qual é o erro?: ', error);
+    countWords(text);
 });
 
-function crashInParagraph(text) {
-    const paragraphs = text.toLowerCase().split('\n');
-    
+function countWords(text) {
+    const paragraphs = extractParagraphs(text)
     const cont = paragraphs.flatMap(paragraph => {
         if(!paragraph) return [];
-
+    
         return checkDuplicatedWords(paragraph);
     });    
-
+    
     console.log(cont);
+
+}
+
+function extractParagraphs(text) {
+    return text.toLowerCase().split('\n');
 }
 
 function clearWords(word) {
