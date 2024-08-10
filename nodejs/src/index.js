@@ -10,7 +10,6 @@ fs.readFile(link, 'utf-8', (error, text) => {
 });
 
 
-// montar um objeto com o resultado
 
 function crashInParagraph(text) {
     const paragraphs = text.toLowerCase().split('\n');
@@ -22,15 +21,23 @@ function crashInParagraph(text) {
     console.log(cont);
 }
 
+function clearWords(word) {
+    return word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '');
+}
+
 function checkDuplicatedWords(text) {
     // criar um array com as palavras
     const listWords = text.split(' ');
     const result = {};
     
     listWords.forEach(word => {
-        // contar as ocorrência
-        result[word] = (result[word] || 0) + 1 
+        if(word.length >= 3) {
+            const cleanWord = clearWords(word);
+            // contar as ocorrências
+            result[cleanWord] = (result[cleanWord] || 0) + 1 
+        }
     });
 
+    // montar um objeto com o resultado
     return result;
 }
