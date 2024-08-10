@@ -9,14 +9,14 @@ fs.readFile(link, 'utf-8', (error, text) => {
     //checkDuplicatedWords(text);
 });
 
-
-
 function crashInParagraph(text) {
     const paragraphs = text.toLowerCase().split('\n');
     
-    const cont = paragraphs.map((paragraph) => {
+    const cont = paragraphs.flatMap(paragraph => {
+        if(!paragraph) return [];
+
         return checkDuplicatedWords(paragraph);
-    });
+    });    
 
     console.log(cont);
 }
