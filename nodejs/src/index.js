@@ -5,8 +5,15 @@ const filePath = process.argv;
 const link = filePath[2];
 
 fs.readFile(link, 'utf-8', (error, text) => {
-    console.log('Qual é o erro?: ', error);
-    countWords(text);
+    
+    try {
+        if(error) throw error;
+        countWords(text);
+
+    }catch(error) {
+        if(error.code === 'ENOENT') console.log("Erro esperado");
+        else console.log("Outro erro aí");
+    }
 });
 
 function countWords(text) {
