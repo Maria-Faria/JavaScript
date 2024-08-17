@@ -4,6 +4,7 @@ import treatErrors from './errors/errorFunctions.js';
 import { countWords } from './index.js';
 import { createFileOutput } from './helper.js';
 import { Command } from 'commander';
+import chalk from 'chalk';
 
 const program = new Command();
 
@@ -15,7 +16,7 @@ program
     const { texto, destino } = options;
 
     if (!texto || !destino) {
-        console.error("Erro: favor inserir caminho de origem e destino");
+        console.error(chalk.red("Erro: favor inserir caminho de origem e destino"));
 
         program.help();
 
@@ -27,7 +28,7 @@ program
 
     try {
         processFile(textPath, destinyPath);
-        console.log("Texto processado com sucesso")
+        console.log(chalk.green("Texto processado com sucesso"))
 
     } catch (error) {
         console.log(`Ocorreu um erro no processamento - ${error}`);
