@@ -1,6 +1,7 @@
 import fs from 'fs';
 import treatErrors from './errors/errorFunctions.js';
 import { countWords } from './index.js';
+import { createFileOutput } from './helper.js';
 
 const filePath = process.argv;
 const link = filePath[2];
@@ -33,7 +34,7 @@ fs.readFile(link, 'utf-8', (error, text) => {
 
 function createAndSaveFile(listWords, address) {
     const newFile = `${address}/result.txt`;
-    const wordsText = JSON.stringify(listWords);
+    const wordsText = createFileOutput(listWords);
 
     fs.promises.writeFile(newFile, wordsText) //não retorna nada
     .then(() => {
