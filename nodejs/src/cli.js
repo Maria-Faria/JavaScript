@@ -18,7 +18,7 @@ fs.readFile(link, 'utf-8', (error, text) => {
     }
 });
 
-async function createAndSaveFile(listWords, address) {
+/*async function createAndSaveFile(listWords, address) {
     const newFile = `${address}/result.txt`;
     const wordsText = JSON.stringify(listWords);
 
@@ -29,4 +29,21 @@ async function createAndSaveFile(listWords, address) {
     } catch (error) {
         throw error;
     }
+}*/
+
+function createAndSaveFile(listWords, address) {
+    const newFile = `${address}/result.txt`;
+    const wordsText = JSON.stringify(listWords);
+
+    fs.promises.writeFile(newFile, wordsText) //não retorna nada
+    .then(() => {
+        //processamento feito com o resultado da promessa
+
+        console.log("Arquivo criado");
+    })
+    .catch((error) => {
+        throw error;
+    })
+    .finally(() => console.log("Operação finalizada")); //sempre acontece, com ou sem falhas
+
 }
