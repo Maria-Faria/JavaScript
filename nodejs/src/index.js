@@ -1,22 +1,4 @@
-//Receber o texto
-const fs = require('fs');
-
-const filePath = process.argv;
-const link = filePath[2];
-
-fs.readFile(link, 'utf-8', (error, text) => {
-    
-    try {
-        if(error) throw error;
-        countWords(text);
-
-    }catch(error) {
-        if(error.code === 'ENOENT') console.log("Erro esperado");
-        else console.log("Outro erro aí");
-    }
-});
-
-function countWords(text) {
+export function countWords(text) {
     const paragraphs = extractParagraphs(text)
     const cont = paragraphs.flatMap(paragraph => {
         if(!paragraph) return [];
