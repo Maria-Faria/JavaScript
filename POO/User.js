@@ -17,11 +17,11 @@ export default class User {
     }
 
     get email() {
-        return this.email;
+        return this.#email;
     }
 
     get birth() {
-        return this.birth;
+        return this.#birth;
     }
 
     get role() {
@@ -31,20 +31,21 @@ export default class User {
     get active() {
         return this.#active;
     }
-    
-    #createUserObj() {
-        return ({
-            name: this.#name,
-            email: this.#email,
-            birth: this.#birth,
-            role: this.#role,
-            active: this.#active,
-        });
+
+    set name(newName) {
+        if(newName === "") {
+            throw new Error("Formato do nome não é válido");
+        }
+        
+        this.#name = newName;
+    }
+
+    set email(newEmail) {
+        this.email = newEmail;
     }
 
     showInfos() {
-        const userObj = this.#createUserObj();
-        return `Nome: ${userObj.name}\nEmail: ${userObj.email}`;
+        return `Nome: ${this.name}\nEmail: ${this.email}`;
     }
 }
 
