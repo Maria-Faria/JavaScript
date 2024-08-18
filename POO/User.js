@@ -61,6 +61,10 @@ export default class User {
             return `Dados do docente:\n${this.name}, ${this.email}`;
         }
     }
+
+    static showGenericsInfos(name, email) {
+        return `${name}, ${email}`;
+    }
 }
 
 /*const user = new User("Maria Eduarda", "maria@gmail.com", "15/04/2004");

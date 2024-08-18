@@ -6,12 +6,15 @@ import Teacher from "./Teacher.js";
 const newUser = new User("Juliana", "j@jgmail.com", "2010-04-20");
 console.log(newUser.showInfos());
 
-console.log("--------------------")
+console.log("--------------------");
 
-const newAdmin = new Admin("Maria", "maria@gmail.com", "2004-04-15");
+const data = User.showGenericsInfos("Cássio", "c@c.com");
+console.log(data);
+
+/*const newAdmin = new Admin("Maria", "maria@gmail.com", "2004-04-15");
 console.log(newAdmin.showInfos());
 
 console.log("--------------------")
 
 const newTeacher = new Teacher("Ana", "ana@gmail.com", "2004-04-15");
-console.log(newTeacher.showInfos());
+console.log(newTeacher.showInfos());*/
