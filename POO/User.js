@@ -1,14 +1,19 @@
 export default class User {
+    #name;
+    #email;
+    #birth;
+    #role;
+    #active;
     constructor(name, email, birth, role, active = true) {
-        this.name = name;
-        this.email = email;
-        this.birth = birth;
-        this.role = role || "estudante";
-        this.active = active;
+        this.#name = name;
+        this.#email = email;
+        this.#birth = birth;
+        this.#role = role || "estudante";
+        this.#active = active;
     }
 
     showInfos() {
-        return `Nome: ${this.name}\nEmail: ${this.email}`;
+        return `Nome: ${this.#name}\nEmail: ${this.#email}`;
     }
 }
 
