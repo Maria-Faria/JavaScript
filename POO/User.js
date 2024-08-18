@@ -12,7 +12,7 @@ export default class User {
     }
 }
 
-const user = new User("Maria Eduarda", "maria@gmail.com", "15/04/2004");
+/*const user = new User("Maria Eduarda", "maria@gmail.com", "15/04/2004");
 
 console.log(user);
-console.log(user.showInfos());
+console.log(user.showInfos());*/
