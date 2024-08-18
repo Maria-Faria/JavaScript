@@ -12,6 +12,26 @@ export default class User {
         this.#active = active;
     }
 
+    get name() {
+        return this.#name;
+    }
+
+    get email() {
+        return this.email;
+    }
+
+    get birth() {
+        return this.birth;
+    }
+
+    get role() {
+        return this.#role;
+    }
+
+    get active() {
+        return this.#active;
+    }
+    
     #createUserObj() {
         return ({
             name: this.#name,

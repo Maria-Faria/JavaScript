@@ -8,15 +8,10 @@ export default class Admin extends User {
     createCourse(courseName, vacanciesNumber) {
         return `O curso de ${courseName} foi criado com ${vacanciesNumber} vagas`;
     }
-
-    showName() {
-        return `${this.#name}`;
-    }
 }
 
-const admin = new Admin("Zé", "ze@gmail.com", "10/02/2008");
+/*const admin = new Admin("Zé", "ze@gmail.com", "10/02/2008");
 
 console.log(admin);
 console.log(admin.createCourse("JavaScript", 8));
-console.log(admin.showInfos());
-console.log(admin.showName());
+console.log(admin.showInfos());*/
