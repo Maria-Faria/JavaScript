@@ -12,8 +12,19 @@ export default class User {
         this.#active = active;
     }
 
+    #createUserObj() {
+        return ({
+            name: this.#name,
+            email: this.#email,
+            birth: this.#birth,
+            role: this.#role,
+            active: this.#active,
+        });
+    }
+
     showInfos() {
-        return `Nome: ${this.#name}\nEmail: ${this.#email}`;
+        const userObj = this.#createUserObj();
+        return `Nome: ${userObj.name}\nEmail: ${userObj.email}`;
     }
 }
 
