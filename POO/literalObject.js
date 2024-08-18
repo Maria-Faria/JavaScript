@@ -9,3 +9,15 @@ const user = {
         console.log(this.email);
     }
 }
+
+//user.showInfos();
+
+//const show = user.showInfos;
+//show();
+
+const show = function() {
+    console.log(this.name, this.email);
+}
+
+const showName = show.bind(user);
+showName();
