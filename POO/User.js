@@ -36,7 +36,7 @@ export default class User {
         if(newName === "") {
             throw new Error("Formato do nome não é válido");
         }
-        
+
         this.#name = newName;
     }
 
@@ -44,8 +44,22 @@ export default class User {
         this.email = newEmail;
     }
 
-    showInfos() {
+    /*showInfos() {
         return `Nome: ${this.name}\nEmail: ${this.email}`;
+    }*/
+
+    showInfos() {
+        if(this.role === "estudante") {
+            return `Dados do estudante:\n${this.name}`;
+        }
+
+        if(this.role === "admin") {
+            return `Dados do admin:\n${this.name}, ${this.role}`;
+        }
+
+        if(this.role === "docente") {
+            return `Dados do docente:\n${this.name}, ${this.email}`;
+        }
     }
 }
 
